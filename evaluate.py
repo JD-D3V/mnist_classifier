@@ -2,6 +2,7 @@ import torch
 from model import CNN
 from data_loader import get_dataloaders
 
+
 def evaluate_model(model_path="mnist_cnn.pth"):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = CNN().to(device)
@@ -21,6 +22,7 @@ def evaluate_model(model_path="mnist_cnn.pth"):
             correct += (predicted == target).sum().item()
 
     print(f"Test Accuracy: {100 * correct / total:.2f}%")
+
 
 if __name__ == "__main__":
     evaluate_model()

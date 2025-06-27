@@ -4,6 +4,7 @@ import torch.optim as optim
 from model import CNN
 from data_loader import get_dataloaders
 
+
 def train_model(epochs=5, lr=0.001):
     print("Starting training...")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -27,6 +28,7 @@ def train_model(epochs=5, lr=0.001):
         print(f"Epoch {epoch+1}, Loss: {total_loss / len(train_loader):.4f}")
 
     torch.save(model.state_dict(), "mnist_cnn.pth")
+
 
 if __name__ == "__main__":
     train_model()
