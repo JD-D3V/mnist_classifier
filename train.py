@@ -5,6 +5,7 @@ from model import CNN
 from data_loader import get_dataloaders
 
 def train_model(epochs=5, lr=0.001):
+    print("Starting training...")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = CNN().to(device)
     train_loader, _ = get_dataloaders()
