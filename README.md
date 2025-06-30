@@ -57,10 +57,3 @@ Epoch 2, Loss: 0.1221
 Test Accuracy: 98.45%
 ```
 
-##  Model Architecture
-
-- Conv2d → ReLU → Conv2d → ReLU → MaxPool → Dropout → FC → ReLU → FC
-
-## 📌 License
-
-MIT License
