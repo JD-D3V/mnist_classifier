@@ -1,15 +1,15 @@
-# 🧠 MNIST Digit Classifier (PyTorch)
+#  MNIST Digit Classifier (PyTorch)
 
 A simple but powerful Convolutional Neural Network (CNN) built using PyTorch to classify handwritten digits (0–9) from the MNIST dataset.
 
-## 🚀 Features
+##  Features
 - Built with PyTorch
 - Achieves ~98%+ accuracy on test set
 - Modular code structure for easy reuse
 - Supports GPU acceleration
 - Separates training, evaluation, and data loading for clarity
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 mnist_classifier/
@@ -19,7 +19,7 @@ mnist_classifier/
 ├── evaluate.py          # Model evaluation script
 ```
 
-## 🛠️ Requirements
+## 🛠 Requirements
 
 - Python 3.8+
 - torch
@@ -32,7 +32,7 @@ Install dependencies with:
 pip install torch torchvision matplotlib
 ```
 
-## ▶️ How to Run
+## ▶ How to Run
 
 ### 1. Train the Model
 
@@ -55,7 +55,7 @@ This will:
 - Load the saved model
 - Print accuracy on the test dataset
 
-## 📊 Sample Output
+##  Sample Output
 
 ```
 Epoch 1, Loss: 0.3452
@@ -64,7 +64,7 @@ Epoch 2, Loss: 0.1221
 Test Accuracy: 98.45%
 ```
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 - Conv2d → ReLU → Conv2d → ReLU → MaxPool → Dropout → FC → ReLU → FC
 
