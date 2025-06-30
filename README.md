@@ -21,13 +21,6 @@ mnist_classifier/
 
 ## 🛠 Requirements
 
-- Python 3.8+
-- torch
-- torchvision
-- matplotlib (optional, for visualizations)
-
-Install dependencies with:
-
 ```bash
 pip install torch torchvision matplotlib
 ```
